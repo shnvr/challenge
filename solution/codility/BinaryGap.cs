@@ -1,6 +1,5 @@
-﻿namespace  codility.lessons.iterations;
+﻿//https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 using System;
-//https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 public class BinaryGap {
     public int solution(int N) {
         // Implement your solution here
