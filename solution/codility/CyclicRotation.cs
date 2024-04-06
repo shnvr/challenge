@@ -1,10 +1,8 @@
-﻿namespace solution;
-
+﻿//https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 public class CyclicRotation
 {
     public int[] solution(int[] A, int K) 
     {
-        // Implement your solution here
         int lenght = A.Length;
         var result = new int[lenght];
         

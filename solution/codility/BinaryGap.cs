@@ -1,8 +1,6 @@
 ﻿//https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
-using System;
 public class BinaryGap {
     public int solution(int N) {
-        // Implement your solution here
         int max = 0;
         int current_max = 0;
         string binary_N = Convert.ToString(N,2);
