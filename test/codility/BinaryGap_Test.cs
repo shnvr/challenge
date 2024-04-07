@@ -1,12 +1,12 @@
 ﻿namespace codility;
 public class BinaryGap_Test
 {
-    private BinaryGap _BinaryGap;
+    private BinaryGap binaryGap;
 
     [SetUp]
     public void SetUp()
     {
-        _BinaryGap = new BinaryGap();
+        binaryGap = new BinaryGap();
     }
 
     [TestCase(9, ExpectedResult = 2)]
@@ -21,7 +21,7 @@ public class BinaryGap_Test
 
     public int CorrectnessTest(int value)
     {
-        return _BinaryGap.solution(value);
+        return binaryGap.solution(value);
     }
 
     [TestCase(31, ExpectedResult = 0)]
@@ -29,7 +29,7 @@ public class BinaryGap_Test
     {
         int converted_value = (int)Math.Pow(2, value);
 
-        return _BinaryGap.solution(converted_value - 1);
+        return binaryGap.solution(converted_value - 1);
     }
 
 }

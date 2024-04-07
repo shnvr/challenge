@@ -1,12 +1,12 @@
 ﻿namespace codility;
 public class CyclicRotation_Test
 {
-    private CyclicRotation _CyclicRotation;
+    private CyclicRotation cyclicRotation;
 
     [SetUp]
     public void SetUp()
     {
-        _CyclicRotation = new CyclicRotation();
+        cyclicRotation = new CyclicRotation();
     }
 
     [TestCase(new int[] { 3, 8, 9, 7, 6 }, 3, ExpectedResult = new int[] { 9, 7, 6, 3, 8 })]
@@ -15,6 +15,6 @@ public class CyclicRotation_Test
 
     public int[] CorrectnessTest(int[] value, int k)
     {
-        return _CyclicRotation.solution(value, k);
+        return cyclicRotation.solution(value, k);
     }
 }
