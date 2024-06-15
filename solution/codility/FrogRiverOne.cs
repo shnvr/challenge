@@ -7,7 +7,7 @@ public class FrogRiverOne
         int result = -1;
         int length = A.Length;
         int step = X;
-        bool[]step_progress = new bool[X];
+        bool[]step_progress = new bool[X+1];
         for (int i = 0; i < length; i++)
         {
             if(!step_progress[A[i]])
