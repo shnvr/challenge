@@ -9,7 +9,7 @@ public class FrogRiverOne_Test
         frogRiverOne = new FrogRiverOne();
     }
 
-    [TestCase(5, new int[]{1,3,1,4,2,3,5,4}, ExpectedResult = 6)]
+    [TestCase(5, new int[]{1,3,1,4,2,3,5,4}, ExpectedResult = 6 )]
     [TestCase(5, new int[]{3}, ExpectedResult = -1)]
     public int CorrectnessTest(int param1, int[] param2)
     {
