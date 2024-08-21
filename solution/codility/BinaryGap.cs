@@ -20,4 +20,29 @@ public class BinaryGap {
         }
         return max;
     }
+    public int BinaryGap2(int N)
+{
+    string binary = Convert.ToString(N, 2);
+    binary = binary.TrimEnd('0');
+    int maxCount = 0;
+    int longest = 0;
+    for (int i = 0; i < binary.Length; i++)
+    {
+        if (binary[i] == '1')
+        {
+            if (maxCount > longest)
+            {
+                longest = maxCount;
+            }
+            maxCount = 0;
+        }
+        else
+        {
+            maxCount++;
+        }
+    }
+
+
+    return longest;
+}
 }
