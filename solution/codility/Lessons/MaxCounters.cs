@@ -2,20 +2,36 @@
 public class MaxCounters
 {
     public int[] solution(int N, int[] A) {
-
-        if(N <= A.Length)
-        {
-            A[N-1]++;
-        }
-        else
-        {
-            int maxValue = A.Max();
-            for (int i = 0; i < A.Length; i++)
+        int[] operation = new int[N];
+            int max = 0, globalMax = 0;
+            foreach (var item in A)
             {
-                A[i] = maxValue;
+                if (item > N)
+                {
+                    globalMax = max;
+                }
+                else
+                {
+                    if (operation[item - 1] < globalMax)
+                    {
+                        operation[item - 1] = globalMax;
+                    }
+                    operation[item - 1]++;
+                    if (max < operation[item - 1])
+                    {
+                        max = operation[item - 1];
+                    }
+                }
             }
-        }
-        return A;
-    }
+            for (int i = 0; i < operation.Length; i++)
+            {
+                if (operation[i] < globalMax)
+                {
+                    operation[i] = globalMax;
+                }
+            }
+
+            return operation;
+}
 
 }
