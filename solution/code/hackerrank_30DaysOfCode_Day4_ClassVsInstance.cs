@@ -1,7 +1,10 @@
 //https://www.hackerrank.com/challenges/30-class-vs-instance
-class Person1 {
+using Microsoft.VisualBasic;
+
+namespace class_vs_instance;
+class Person {
     public int age;     
-	public Person1(int initialAge) {
+	public Person(int initialAge) {
         // Add some more code to run some checks on initialAge
         if(initialAge<0)
         {
@@ -29,7 +32,7 @@ static void Main(String[] args) {
         int T=int.Parse(Console.In.ReadLine());
         for (int i = 0; i < T; i++) {
             int age=int.Parse(Console.In.ReadLine());
-            Person1 p=new Person1(age);
+            Person p=new Person(age);
              p.amIOld();
                 for (int j = 0; j < 3; j++) {
                   p.yearPasses();

@@ -1,6 +1,7 @@
 //https://www.hackerrank.com/challenges/30-conditional-statements
 
-class IntrotoConditionalStatements {
+namespace IntrotoConditionalStatements;
+class Solution {
 
 
 

@@ -1,5 +1,6 @@
 // https://www.hackerrank.com/challenges/30-operators
-class operators {
+namespace operators;
+class Solution {
 
     // Complete the solve function below.
     static void solve(double meal_cost, int tip_percent, int tax_percent) {

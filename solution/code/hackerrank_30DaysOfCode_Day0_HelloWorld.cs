@@ -1,5 +1,6 @@
 //https://www.hackerrank.com/challenges/30-hello-world/problem
-class HelloWorld {
+namespace HelloWorld;
+class Solution {
     static void Main(String[] args) {
         // Declare a variable named 'inputString' to hold our input.
         String inputString; 

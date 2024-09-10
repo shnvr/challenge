@@ -1,7 +1,8 @@
 //https://www.hackerrank.com/challenges/30-queues-stacks
 using System.Collections;
 
-class QueueAndStack {
+namespace QueueAndStack;
+class Solution{
     //Write your code here
     Stack s = new Stack();
     Queue q = new Queue();

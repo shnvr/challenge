@@ -1,5 +1,6 @@
 //https://www.hackerrank.com/challenges/30-loops
-class Loops {
+namespace Loops;
+class Solution {
 
     static void Main(string[] args) {
         int n = Convert.ToInt32(Console.ReadLine());

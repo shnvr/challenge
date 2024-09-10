@@ -1,5 +1,6 @@
 //https://www.hackerrank.com/challenges/30-data-types
-class DataTypes {
+namespace DataTypes;
+class Solution{
     static void Main(String[] args) {
         int i = 4;
         double d = 4.0;
