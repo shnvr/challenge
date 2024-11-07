@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/ctci-array-left-rotation
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Collections;
@@ -11,7 +12,6 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
-//https://www.hackerrank.com/challenges/ctci-array-left-rotation
 namespace ctciarrayleftrotation;
 public class Result
 {
