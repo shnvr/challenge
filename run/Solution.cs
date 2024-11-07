@@ -1,86 +1,3 @@
-//https://www.hackerrank.com/challenges/new-year-chaos/
-
-
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
-
-namespace newyearchaos;
-public class Result
-{
-
-    /*
-     * Complete the 'minimumBribes' function below.
-     *
-     * The function accepts INTEGER_ARRAY q as parameter.
-     */
-
-    public static void minimumBribes(List<int> q)
-    {
-        int result = 0;
-        int allowedBribeCount = 2;
-
-        for (int i = 0; i < q.Count; i++)
-        {
-            if (q[i] - (i + 1) > allowedBribeCount)
-            {
-                Console.WriteLine("Too chaotic");
-                return;
-            }
-
-            for (int j = Math.Max(0, q[i] - allowedBribeCount); j < i; j++)
-            {
-                if (q[j] > q[i])
-                {
-                    result++;
-                }
-            }
-        }
-
-        Console.WriteLine(result);
-
-    }
-    public static void minimumBribes2(List<int> q)
-    {
-        int result = 0;
-        for (int i = 0; i < q.Count; i++)
-        {
-            if ((q[i] - i) > 3)
-            {
-                Console.WriteLine("Too chaotic");
-                return;
-            }
-            int currentMoves = 0;
-            for (int j = 0; j < i; j++)
-            {
-
-                if (q[j] > q[i])
-                {
-                    currentMoves++;
-                }
-
-            }
-
-            result += currentMoves;
-
-        }
-
-        Console.WriteLine(result);
-
-    }
-
-}
-
 public class Solution
 {
     public static void Main(string[] args)
@@ -112,7 +29,7 @@ public class Solution
 
                 List<int> q = sr.ReadLine().TrimEnd().Split(' ').ToList().Select(qTemp => Convert.ToInt32(qTemp)).ToList();
 
-                Result.minimumBribes2(q);
+                //Result.minimumBribes2(q);
             }
             line = sr.ReadLine();
             //Continue to read until you reach end of file
@@ -139,5 +56,3 @@ public class Solution
 
     }
 }
-
-
